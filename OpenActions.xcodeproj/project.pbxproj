@@ -50,7 +50,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		32D5BCF82780C5B200421102 /* OpenActions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenActions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32D5BCF82780C5B200421102 /* Open Actions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open Actions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D5BCFB2780C5B200421102 /* OpenActionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenActionsApp.swift; sourceTree = "<group>"; };
 		32D5BCFD2780C5B200421102 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		32D5BCFF2780C5B300421102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 		32D5BCF92780C5B200421102 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				32D5BCF82780C5B200421102 /* OpenActions.app */,
+				32D5BCF82780C5B200421102 /* Open Actions.app */,
 				32D5BD082780C5B300421102 /* OpenActionsTests.xctest */,
 				32D5BD2B2780C81E00421102 /* IntentsExtension.appex */,
 			);
@@ -177,7 +177,7 @@
 			);
 			name = OpenActions;
 			productName = OpenActions;
-			productReference = 32D5BCF82780C5B200421102 /* OpenActions.app */;
+			productReference = 32D5BCF82780C5B200421102 /* Open Actions.app */;
 			productType = "com.apple.product-type.application";
 		};
 		32D5BD072780C5B300421102 /* OpenActionsTests */ = {
@@ -465,7 +465,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abiaad.openactions;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Open Actions";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -497,7 +497,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abiaad.openactions;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Open Actions";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
