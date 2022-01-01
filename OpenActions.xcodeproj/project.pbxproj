@@ -7,19 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3279F26F27810C57000482B6 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D5BD2D2780C81E00421102 /* Intents.framework */; };
+		32D17B782780CDB100BFB702 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D5BD2D2780C81E00421102 /* Intents.framework */; };
+		32D17B8E2781038600BFB702 /* UUIDIntentHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D5BD462780CAB900421102 /* UUIDIntentHandlerTests.swift */; };
+		32D17B902781044500BFB702 /* IntentsUseCases in Frameworks */ = {isa = PBXBuildFile; productRef = 32D17B8F2781044500BFB702 /* IntentsUseCases */; };
+		32D17B922781059000BFB702 /* IntentsUseCases in Frameworks */ = {isa = PBXBuildFile; productRef = 32D17B912781059000BFB702 /* IntentsUseCases */; };
+		32D17B962781077100BFB702 /* IntentsDefinition.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 32D5BD3C2780C8AB00421102 /* IntentsDefinition.intentdefinition */; };
 		32D5BCFC2780C5B200421102 /* OpenActionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D5BCFB2780C5B200421102 /* OpenActionsApp.swift */; };
 		32D5BCFE2780C5B200421102 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D5BCFD2780C5B200421102 /* ContentView.swift */; };
 		32D5BD002780C5B300421102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D5BCFF2780C5B300421102 /* Assets.xcassets */; };
 		32D5BD032780C5B300421102 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D5BD022780C5B300421102 /* Preview Assets.xcassets */; };
-		32D5BD0D2780C5B300421102 /* OpenActionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D5BD0C2780C5B300421102 /* OpenActionsTests.swift */; };
-		32D5BD2E2780C81E00421102 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D5BD2D2780C81E00421102 /* Intents.framework */; };
 		32D5BD312780C81E00421102 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D5BD302780C81E00421102 /* IntentHandler.swift */; };
 		32D5BD352780C81E00421102 /* IntentsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 32D5BD2B2780C81E00421102 /* IntentsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		32D5BD3D2780C8AB00421102 /* IntentsDefinition.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 32D5BD3C2780C8AB00421102 /* IntentsDefinition.intentdefinition */; };
+		32D5BD492780CAB900421102 /* UUIDIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D5BD472780CAB900421102 /* UUIDIntentHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		32D5BD092780C5B300421102 /* PBXContainerItemProxy */ = {
+		32D17B892781036B00BFB702 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 32D5BCF02780C5B200421102 /* Project object */;
 			proxyType = 1;
@@ -50,13 +55,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		32D17B792780F19C00BFB702 /* IntentsExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = IntentsExtension.entitlements; sourceTree = "<group>"; };
+		32D17B7C2780FF9700BFB702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		32D17B852781036B00BFB702 /* OpenActionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenActionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D5BCF82780C5B200421102 /* Open Actions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open Actions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D5BCFB2780C5B200421102 /* OpenActionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenActionsApp.swift; sourceTree = "<group>"; };
 		32D5BCFD2780C5B200421102 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		32D5BCFF2780C5B300421102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32D5BD022780C5B300421102 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		32D5BD082780C5B300421102 /* OpenActionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenActionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		32D5BD0C2780C5B300421102 /* OpenActionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenActionsTests.swift; sourceTree = "<group>"; };
 		32D5BD252780C71900421102 /* OpenActions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenActions.entitlements; sourceTree = "<group>"; };
 		32D5BD2B2780C81E00421102 /* IntentsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D5BD2D2780C81E00421102 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
@@ -64,17 +70,21 @@
 		32D5BD322780C81E00421102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32D5BD3C2780C8AB00421102 /* IntentsDefinition.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = IntentsDefinition.intentdefinition; sourceTree = "<group>"; };
 		32D5BD3F2780C98400421102 /* IntentsUseCases */ = {isa = PBXFileReference; lastKnownFileType = folder; path = IntentsUseCases; sourceTree = "<group>"; };
+		32D5BD462780CAB900421102 /* UUIDIntentHandlerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UUIDIntentHandlerTests.swift; sourceTree = "<group>"; };
+		32D5BD472780CAB900421102 /* UUIDIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UUIDIntentHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		32D5BCF52780C5B200421102 /* Frameworks */ = {
+		32D17B822781036B00BFB702 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3279F26F27810C57000482B6 /* Intents.framework in Frameworks */,
+				32D17B902781044500BFB702 /* IntentsUseCases in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		32D5BD052780C5B300421102 /* Frameworks */ = {
+		32D5BCF52780C5B200421102 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -85,7 +95,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32D5BD2E2780C81E00421102 /* Intents.framework in Frameworks */,
+				32D17B922781059000BFB702 /* IntentsUseCases in Frameworks */,
+				32D17B782780CDB100BFB702 /* Intents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +108,6 @@
 			children = (
 				32D5BD3E2780C95A00421102 /* Packages */,
 				32D5BCFA2780C5B200421102 /* OpenActions */,
-				32D5BD0B2780C5B300421102 /* OpenActionsTests */,
 				32D5BD2F2780C81E00421102 /* IntentsExtension */,
 				32D5BD2C2780C81E00421102 /* Frameworks */,
 				32D5BCF92780C5B200421102 /* Products */,
@@ -108,8 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				32D5BCF82780C5B200421102 /* Open Actions.app */,
-				32D5BD082780C5B300421102 /* OpenActionsTests.xctest */,
 				32D5BD2B2780C81E00421102 /* IntentsExtension.appex */,
+				32D17B852781036B00BFB702 /* OpenActionsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +127,7 @@
 		32D5BCFA2780C5B200421102 /* OpenActions */ = {
 			isa = PBXGroup;
 			children = (
+				32D17B7C2780FF9700BFB702 /* Info.plist */,
 				32D5BD252780C71900421102 /* OpenActions.entitlements */,
 				32D5BCFB2780C5B200421102 /* OpenActionsApp.swift */,
 				32D5BCFD2780C5B200421102 /* ContentView.swift */,
@@ -134,14 +145,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		32D5BD0B2780C5B300421102 /* OpenActionsTests */ = {
-			isa = PBXGroup;
-			children = (
-				32D5BD0C2780C5B300421102 /* OpenActionsTests.swift */,
-			);
-			path = OpenActionsTests;
-			sourceTree = "<group>";
-		};
 		32D5BD2C2780C81E00421102 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,8 +156,10 @@
 		32D5BD2F2780C81E00421102 /* IntentsExtension */ = {
 			isa = PBXGroup;
 			children = (
+				32D5BD442780CA9800421102 /* Handlers */,
 				32D5BD3C2780C8AB00421102 /* IntentsDefinition.intentdefinition */,
 				32D5BD302780C81E00421102 /* IntentHandler.swift */,
+				32D17B792780F19C00BFB702 /* IntentsExtension.entitlements */,
 				32D5BD322780C81E00421102 /* Info.plist */,
 			);
 			path = IntentsExtension;
@@ -168,9 +173,47 @@
 			path = Packages;
 			sourceTree = "<group>";
 		};
+		32D5BD442780CA9800421102 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				32D5BD452780CAA000421102 /* UUID */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		32D5BD452780CAA000421102 /* UUID */ = {
+			isa = PBXGroup;
+			children = (
+				32D5BD472780CAB900421102 /* UUIDIntentHandler.swift */,
+				32D5BD462780CAB900421102 /* UUIDIntentHandlerTests.swift */,
+			);
+			path = UUID;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		32D17B842781036B00BFB702 /* OpenActionsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32D17B8B2781036B00BFB702 /* Build configuration list for PBXNativeTarget "OpenActionsTests" */;
+			buildPhases = (
+				32D17B812781036B00BFB702 /* Sources */,
+				32D17B822781036B00BFB702 /* Frameworks */,
+				32D17B832781036B00BFB702 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32D17B8A2781036B00BFB702 /* PBXTargetDependency */,
+			);
+			name = OpenActionsTests;
+			packageProductDependencies = (
+				32D17B8F2781044500BFB702 /* IntentsUseCases */,
+			);
+			productName = OpenActionsTests;
+			productReference = 32D17B852781036B00BFB702 /* OpenActionsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		32D5BCF72780C5B200421102 /* OpenActions */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32D5BD1C2780C5B300421102 /* Build configuration list for PBXNativeTarget "OpenActions" */;
@@ -190,24 +233,6 @@
 			productReference = 32D5BCF82780C5B200421102 /* Open Actions.app */;
 			productType = "com.apple.product-type.application";
 		};
-		32D5BD072780C5B300421102 /* OpenActionsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 32D5BD1F2780C5B300421102 /* Build configuration list for PBXNativeTarget "OpenActionsTests" */;
-			buildPhases = (
-				32D5BD042780C5B300421102 /* Sources */,
-				32D5BD052780C5B300421102 /* Frameworks */,
-				32D5BD062780C5B300421102 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				32D5BD0A2780C5B300421102 /* PBXTargetDependency */,
-			);
-			name = OpenActionsTests;
-			productName = OpenActionsTests;
-			productReference = 32D5BD082780C5B300421102 /* OpenActionsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		32D5BD2A2780C81E00421102 /* IntentsExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32D5BD362780C81E00421102 /* Build configuration list for PBXNativeTarget "IntentsExtension" */;
@@ -221,6 +246,9 @@
 			dependencies = (
 			);
 			name = IntentsExtension;
+			packageProductDependencies = (
+				32D17B912781059000BFB702 /* IntentsUseCases */,
+			);
 			productName = IntentsExtension;
 			productReference = 32D5BD2B2780C81E00421102 /* IntentsExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -235,10 +263,10 @@
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					32D5BCF72780C5B200421102 = {
+					32D17B842781036B00BFB702 = {
 						CreatedOnToolsVersion = 13.1;
 					};
-					32D5BD072780C5B300421102 = {
+					32D5BCF72780C5B200421102 = {
 						CreatedOnToolsVersion = 13.1;
 					};
 					32D5BD2A2780C81E00421102 = {
@@ -260,26 +288,26 @@
 			projectRoot = "";
 			targets = (
 				32D5BCF72780C5B200421102 /* OpenActions */,
-				32D5BD072780C5B300421102 /* OpenActionsTests */,
 				32D5BD2A2780C81E00421102 /* IntentsExtension */,
+				32D17B842781036B00BFB702 /* OpenActionsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		32D17B832781036B00BFB702 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		32D5BCF62780C5B200421102 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				32D5BD032780C5B300421102 /* Preview Assets.xcassets in Resources */,
 				32D5BD002780C5B300421102 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		32D5BD062780C5B300421102 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,20 +321,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		32D17B812781036B00BFB702 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D17B8E2781038600BFB702 /* UUIDIntentHandlerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		32D5BCF42780C5B200421102 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32D17B962781077100BFB702 /* IntentsDefinition.intentdefinition in Sources */,
 				32D5BCFE2780C5B200421102 /* ContentView.swift in Sources */,
 				32D5BCFC2780C5B200421102 /* OpenActionsApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		32D5BD042780C5B300421102 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				32D5BD0D2780C5B300421102 /* OpenActionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32D5BD312780C81E00421102 /* IntentHandler.swift in Sources */,
+				32D5BD492780CAB900421102 /* UUIDIntentHandler.swift in Sources */,
 				32D5BD3D2780C8AB00421102 /* IntentsDefinition.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,10 +352,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		32D5BD0A2780C5B300421102 /* PBXTargetDependency */ = {
+		32D17B8A2781036B00BFB702 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 32D5BCF72780C5B200421102 /* OpenActions */;
-			targetProxy = 32D5BD092780C5B300421102 /* PBXContainerItemProxy */;
+			targetProxy = 32D17B892781036B00BFB702 /* PBXContainerItemProxy */;
 		};
 		32D5BD342780C81E00421102 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -335,6 +365,48 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		32D17B8C2781036B00BFB702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 252ALU38HU;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abiaad.OpenActionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32D17B8D2781036B00BFB702 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 252ALU38HU;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abiaad.OpenActionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		32D5BD1A2780C5B300421102 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -464,6 +536,7 @@
 				DEVELOPMENT_TEAM = 252ALU38HU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OpenActions/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -495,7 +568,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"OpenActions/Preview Content\"";
 				DEVELOPMENT_TEAM = 252ALU38HU;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTABILITY = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OpenActions/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -515,53 +590,10 @@
 			};
 			name = Release;
 		};
-		32D5BD202780C5B300421102 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 252ALU38HU;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.abiaad.OpenActionsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		32D5BD212780C5B300421102 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 252ALU38HU;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.abiaad.OpenActionsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		32D5BD372780C81E00421102 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = IntentsExtension/IntentsExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -588,10 +620,12 @@
 		32D5BD382780C81E00421102 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = IntentsExtension/IntentsExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 252ALU38HU;
+				ENABLE_TESTABILITY = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IntentsExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = IntentsExtension;
@@ -614,6 +648,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		32D17B8B2781036B00BFB702 /* Build configuration list for PBXNativeTarget "OpenActionsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32D17B8C2781036B00BFB702 /* Debug */,
+				32D17B8D2781036B00BFB702 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		32D5BCF32780C5B200421102 /* Build configuration list for PBXProject "OpenActions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -632,15 +675,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		32D5BD1F2780C5B300421102 /* Build configuration list for PBXNativeTarget "OpenActionsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				32D5BD202780C5B300421102 /* Debug */,
-				32D5BD212780C5B300421102 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		32D5BD362780C81E00421102 /* Build configuration list for PBXNativeTarget "IntentsExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -651,6 +685,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		32D17B8F2781044500BFB702 /* IntentsUseCases */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IntentsUseCases;
+		};
+		32D17B912781059000BFB702 /* IntentsUseCases */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IntentsUseCases;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 32D5BCF02780C5B200421102 /* Project object */;
 }

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "32D5BCF72780C5B200421102"
-               BuildableName = "OpenActions.app"
+               BuildableName = "Open Actions.app"
                BlueprintName = "OpenActions"
                ReferencedContainer = "container:OpenActions.xcodeproj">
             </BuildableReference>
@@ -51,9 +51,9 @@
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      buildConfiguration = "Release"
+      selectedDebuggerIdentifier = ""
+      selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "32D5BCF72780C5B200421102"
-            BuildableName = "OpenActions.app"
+            BuildableName = "Open Actions.app"
             BlueprintName = "OpenActions"
             ReferencedContainer = "container:OpenActions.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "32D5BCF72780C5B200421102"
-            BuildableName = "OpenActions.app"
+            BuildableName = "Open Actions.app"
             BlueprintName = "OpenActions"
             ReferencedContainer = "container:OpenActions.xcodeproj">
          </BuildableReference>

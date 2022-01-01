@@ -6,11 +6,16 @@
 //
 
 import Intents
+import IntentsUseCases
 
 final class IntentHandler: INExtension {
-    
+
     override func handler(for intent: INIntent) -> Any {
-        return self
+        switch intent {
+        case is UUIDIntent:
+            return UUIDIntentHandler()
+        default:
+            return self
+        }
     }
-    
 }
