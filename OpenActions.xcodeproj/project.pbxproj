@@ -63,6 +63,7 @@
 		32D5BD302780C81E00421102 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		32D5BD322780C81E00421102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32D5BD3C2780C8AB00421102 /* IntentsDefinition.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = IntentsDefinition.intentdefinition; sourceTree = "<group>"; };
+		32D5BD3F2780C98400421102 /* IntentsUseCases */ = {isa = PBXFileReference; lastKnownFileType = folder; path = IntentsUseCases; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +95,7 @@
 		32D5BCEF2780C5B200421102 = {
 			isa = PBXGroup;
 			children = (
+				32D5BD3E2780C95A00421102 /* Packages */,
 				32D5BCFA2780C5B200421102 /* OpenActions */,
 				32D5BD0B2780C5B300421102 /* OpenActionsTests */,
 				32D5BD2F2780C81E00421102 /* IntentsExtension */,
@@ -156,6 +158,14 @@
 				32D5BD322780C81E00421102 /* Info.plist */,
 			);
 			path = IntentsExtension;
+			sourceTree = "<group>";
+		};
+		32D5BD3E2780C95A00421102 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				32D5BD3F2780C98400421102 /* IntentsUseCases */,
+			);
+			path = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
