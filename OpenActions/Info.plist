@@ -5,7 +5,7 @@
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>TimeIntervalSinceIntent</string>
-		<string>URLQueryItemsIntent</string>
+		<string>URLQueryIntent</string>
 		<string>UUIDIntent</string>
 	</array>
 </dict>
