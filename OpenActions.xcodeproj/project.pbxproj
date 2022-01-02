@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3279F26F27810C57000482B6 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D5BD2D2780C81E00421102 /* Intents.framework */; };
 		3279F27227820D24000482B6 /* TimeIntervalSinceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3279F27127820D24000482B6 /* TimeIntervalSinceHandler.swift */; };
+		3279F275278215C5000482B6 /* URLQueryIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3279F274278215C5000482B6 /* URLQueryIntentHandler.swift */; };
 		32D17B782780CDB100BFB702 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D5BD2D2780C81E00421102 /* Intents.framework */; };
 		32D17B8E2781038600BFB702 /* UUIDIntentHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D5BD462780CAB900421102 /* UUIDIntentHandlerTests.swift */; };
 		32D17B902781044500BFB702 /* IntentsUseCases in Frameworks */ = {isa = PBXBuildFile; productRef = 32D17B8F2781044500BFB702 /* IntentsUseCases */; };
@@ -57,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		3279F27127820D24000482B6 /* TimeIntervalSinceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalSinceHandler.swift; sourceTree = "<group>"; };
+		3279F274278215C5000482B6 /* URLQueryIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryIntentHandler.swift; sourceTree = "<group>"; };
 		32D17B792780F19C00BFB702 /* IntentsExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = IntentsExtension.entitlements; sourceTree = "<group>"; };
 		32D17B7C2780FF9700BFB702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		32D17B852781036B00BFB702 /* OpenActionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenActionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +113,14 @@
 				3279F27127820D24000482B6 /* TimeIntervalSinceHandler.swift */,
 			);
 			path = TimeIntervalSince;
+			sourceTree = "<group>";
+		};
+		3279F273278215A8000482B6 /* URLQuery */ = {
+			isa = PBXGroup;
+			children = (
+				3279F274278215C5000482B6 /* URLQueryIntentHandler.swift */,
+			);
+			path = URLQuery;
 			sourceTree = "<group>";
 		};
 		32D5BCEF2780C5B200421102 = {
@@ -187,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				3279F2702781A4CA000482B6 /* TimeIntervalSince */,
+				3279F273278215A8000482B6 /* URLQuery */,
 				32D5BD452780CAA000421102 /* UUID */,
 			);
 			path = Handlers;
@@ -354,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3279F275278215C5000482B6 /* URLQueryIntentHandler.swift in Sources */,
 				32D5BD312780C81E00421102 /* IntentHandler.swift in Sources */,
 				3279F27227820D24000482B6 /* TimeIntervalSinceHandler.swift in Sources */,
 				32D5BD492780CAB900421102 /* UUIDIntentHandler.swift in Sources */,

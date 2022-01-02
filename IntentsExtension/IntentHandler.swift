@@ -14,6 +14,8 @@ final class IntentHandler: INExtension {
         switch intent {
         case is TimeIntervalSinceIntent:
             return TimeIntervalSinceIntentHandler()
+        case is URLQueryIntent:
+            return URLQueryIntentHandler()
         case is UUIDIntent:
             return UUIDIntentHandler()
         default:
