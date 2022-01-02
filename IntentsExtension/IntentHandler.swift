@@ -12,6 +12,8 @@ final class IntentHandler: INExtension {
 
     override func handler(for intent: INIntent) -> Any {
         switch intent {
+        case is TimeIntervalSinceIntent:
+            return TimeIntervalSinceIntentHandler()
         case is UUIDIntent:
             return UUIDIntentHandler()
         default:

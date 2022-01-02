@@ -4,6 +4,7 @@
 <dict>
 	<key>NSUserActivityTypes</key>
 	<array>
+		<string>TimeIntervalSinceIntent</string>
 		<string>UUIDIntent</string>
 	</array>
 </dict>
