@@ -160,6 +160,8 @@
 			<string>generic</string>
 			<key>INIntentConfigurable</key>
 			<true/>
+			<key>INIntentDescription</key>
+			<string>Calculate number of seconds between two dates</string>
 			<key>INIntentDescriptionID</key>
 			<string>giNTGn</string>
 			<key>INIntentIneligibleForSuggestions</key>
