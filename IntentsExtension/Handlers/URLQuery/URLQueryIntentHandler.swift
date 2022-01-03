@@ -10,9 +10,9 @@ import IntentsUseCases
 
 final class URLQueryIntentHandler: NSObject, URLQueryIntentHandling {
 
-    private let useCase: URLQueryItemUseCaseProtocol
+    private let useCase: URLQueryUseCaseProtocol
 
-    init(useCase: URLQueryItemUseCaseProtocol = URLQueryItemUseCase()) {
+    init(useCase: URLQueryUseCaseProtocol = URLQueryUseCase()) {
         self.useCase = useCase
     }
 
