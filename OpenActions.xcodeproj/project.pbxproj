@@ -10,13 +10,13 @@
 		3279F26F27810C57000482B6 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D5BD2D2780C81E00421102 /* Intents.framework */; };
 		3279F27227820D24000482B6 /* TimeIntervalSinceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3279F27127820D24000482B6 /* TimeIntervalSinceHandler.swift */; };
 		3279F275278215C5000482B6 /* URLQueryIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3279F274278215C5000482B6 /* URLQueryIntentHandler.swift */; };
+		3284B996278792BB00D79EB8 /* MainApplication in Frameworks */ = {isa = PBXBuildFile; productRef = 3284B995278792BB00D79EB8 /* MainApplication */; };
 		32D17B782780CDB100BFB702 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D5BD2D2780C81E00421102 /* Intents.framework */; };
 		32D17B8E2781038600BFB702 /* UUIDIntentHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D5BD462780CAB900421102 /* UUIDIntentHandlerTests.swift */; };
 		32D17B902781044500BFB702 /* IntentsUseCases in Frameworks */ = {isa = PBXBuildFile; productRef = 32D17B8F2781044500BFB702 /* IntentsUseCases */; };
 		32D17B922781059000BFB702 /* IntentsUseCases in Frameworks */ = {isa = PBXBuildFile; productRef = 32D17B912781059000BFB702 /* IntentsUseCases */; };
 		32D17B962781077100BFB702 /* IntentsDefinition.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 32D5BD3C2780C8AB00421102 /* IntentsDefinition.intentdefinition */; };
 		32D5BCFC2780C5B200421102 /* OpenActionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D5BCFB2780C5B200421102 /* OpenActionsApp.swift */; };
-		32D5BCFE2780C5B200421102 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D5BCFD2780C5B200421102 /* ContentView.swift */; };
 		32D5BD002780C5B300421102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D5BCFF2780C5B300421102 /* Assets.xcassets */; };
 		32D5BD032780C5B300421102 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D5BD022780C5B300421102 /* Preview Assets.xcassets */; };
 		32D5BD312780C81E00421102 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D5BD302780C81E00421102 /* IntentHandler.swift */; };
@@ -59,12 +59,12 @@
 /* Begin PBXFileReference section */
 		3279F27127820D24000482B6 /* TimeIntervalSinceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalSinceHandler.swift; sourceTree = "<group>"; };
 		3279F274278215C5000482B6 /* URLQueryIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryIntentHandler.swift; sourceTree = "<group>"; };
+		3284B994278786E500D79EB8 /* MainApplication */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MainApplication; sourceTree = "<group>"; };
 		32D17B792780F19C00BFB702 /* IntentsExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = IntentsExtension.entitlements; sourceTree = "<group>"; };
 		32D17B7C2780FF9700BFB702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		32D17B852781036B00BFB702 /* OpenActionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenActionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D5BCF82780C5B200421102 /* Open Actions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open Actions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D5BCFB2780C5B200421102 /* OpenActionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenActionsApp.swift; sourceTree = "<group>"; };
-		32D5BCFD2780C5B200421102 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		32D5BCFF2780C5B300421102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32D5BD022780C5B300421102 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		32D5BD252780C71900421102 /* OpenActions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenActions.entitlements; sourceTree = "<group>"; };
@@ -92,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3284B996278792BB00D79EB8 /* MainApplication in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +151,6 @@
 				32D17B7C2780FF9700BFB702 /* Info.plist */,
 				32D5BD252780C71900421102 /* OpenActions.entitlements */,
 				32D5BCFB2780C5B200421102 /* OpenActionsApp.swift */,
-				32D5BCFD2780C5B200421102 /* ContentView.swift */,
 				32D5BCFF2780C5B300421102 /* Assets.xcassets */,
 				32D5BD012780C5B300421102 /* Preview Content */,
 			);
@@ -189,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				32D5BD3F2780C98400421102 /* IntentsUseCases */,
+				3284B994278786E500D79EB8 /* MainApplication */,
 			);
 			path = Packages;
 			sourceTree = "<group>";
@@ -251,6 +252,9 @@
 				32D5BD342780C81E00421102 /* PBXTargetDependency */,
 			);
 			name = OpenActions;
+			packageProductDependencies = (
+				3284B995278792BB00D79EB8 /* MainApplication */,
+			);
 			productName = OpenActions;
 			productReference = 32D5BCF82780C5B200421102 /* Open Actions.app */;
 			productType = "com.apple.product-type.application";
@@ -287,6 +291,7 @@
 				TargetAttributes = {
 					32D17B842781036B00BFB702 = {
 						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 32D5BCF72780C5B200421102;
 					};
 					32D5BCF72780C5B200421102 = {
 						CreatedOnToolsVersion = 13.1;
@@ -356,7 +361,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				32D17B962781077100BFB702 /* IntentsDefinition.intentdefinition in Sources */,
-				32D5BCFE2780C5B200421102 /* ContentView.swift in Sources */,
 				32D5BCFC2780C5B200421102 /* OpenActionsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,6 +396,7 @@
 		32D17B8C2781036B00BFB702 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 252ALU38HU;
@@ -407,12 +412,14 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Open Actions.app/Open Actions";
 			};
 			name = Debug;
 		};
 		32D17B8D2781036B00BFB702 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 252ALU38HU;
@@ -428,6 +435,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Open Actions.app/Open Actions";
 			};
 			name = Release;
 		};
@@ -711,6 +719,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3284B995278792BB00D79EB8 /* MainApplication */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MainApplication;
+		};
 		32D17B8F2781044500BFB702 /* IntentsUseCases */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = IntentsUseCases;

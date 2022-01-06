@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import MainApplication
 
 @main
 struct OpenActionsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }

@@ -1,34 +1,39 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  OpenActions
 //
-//  Created by Pierre Abi-aad on 01/01/2022.
+//  Created by Pierre Abi-aad on 05/01/2022.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+public struct HomeView: View {
 
-    @Environment(\.openURL) var openURL
+    public var body: some View { self.createView() }
+    private let viewModel: HomeViewModelable
 
-    var body: some View {
+    public init() {
+        self.viewModel = HomeViewModel()
+    }
+
+    init(viewModel: HomeViewModelable) {
+        self.viewModel = viewModel
+    }
+
+    private func createView() -> some View {
         HStack {
             Spacer()
             VStack(alignment: .center, spacing: 24, content: {
                 Spacer()
-                Image("logo").frame(width: 100, height: 100, alignment: .center)
-                Text("Open you Shortcuts app to use actions from\nOpen Actions")
+                Image(self.viewModel.logoImageName).frame(width: 100, height: 100, alignment: .center)
+                Text(self.viewModel.title)
                     .font(.body)
                     .fontWeight(.semibold)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
                 Spacer()
-                Button("Contribute on GitHub") {
-                    guard let url = URL(string: "https://github.com/abiaad/OpenActions")
-                    else {
-                        return
-                    }
-                    self.openURL(url)
+                Button(self.viewModel.contributionTitle) {
+                    self.viewModel.openContributionURL()
                 }
                 .foregroundColor(Color.white)
                 .padding()
@@ -42,8 +47,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView(viewModel: HomeViewModel())
     }
 }
