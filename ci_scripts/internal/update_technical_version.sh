@@ -5,4 +5,4 @@
 set -e
 
 TECH_VERSION=`/bin/date "+%y%j%H%M"`
-/usr/libexec/PlistBuddy -c "set CFBundleVersion $TECH_VERSION" OpenActions/Info.plist
+(cd $CI_WORKSPACE && agvtool new-version -all $TECH_VERSION) 
