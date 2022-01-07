@@ -7,18 +7,16 @@
 
 import SwiftUI
 
-public struct HomeView: View {
-
-    public var body: some View { self.createView() }
-    private let viewModel: HomeViewModelable
-
-    public init() {
-        self.viewModel = HomeViewModel()
+public class MainApplicationFactory {
+    public static func createHomeView() -> some View {
+        return HomeView(viewModel: HomeViewModel())
     }
+}
 
-    init(viewModel: HomeViewModelable) {
-        self.viewModel = viewModel
-    }
+struct HomeView: View {
+
+    var body: some View { self.createView() }
+    let viewModel: HomeViewModelable
 
     private func createView() -> some View {
         HStack {
