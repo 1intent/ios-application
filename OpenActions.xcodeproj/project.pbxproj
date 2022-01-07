@@ -57,6 +57,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		326E23FD2788798900A87A9D /* MainApplication.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = MainApplication.xctestplan; sourceTree = "<group>"; };
+		326E23FF278879D400A87A9D /* IntentsUseCases.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = IntentsUseCases.xctestplan; sourceTree = "<group>"; };
+		326E2400278879E700A87A9D /* OpenActionsTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = OpenActionsTests.xctestplan; sourceTree = "<group>"; };
 		3279F27127820D24000482B6 /* TimeIntervalSinceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalSinceHandler.swift; sourceTree = "<group>"; };
 		3279F274278215C5000482B6 /* URLQueryIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryIntentHandler.swift; sourceTree = "<group>"; };
 		3284B994278786E500D79EB8 /* MainApplication */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MainApplication; sourceTree = "<group>"; };
@@ -108,6 +111,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		326E23FE2788799500A87A9D /* TestsPlans */ = {
+			isa = PBXGroup;
+			children = (
+				326E23FF278879D400A87A9D /* IntentsUseCases.xctestplan */,
+				326E23FD2788798900A87A9D /* MainApplication.xctestplan */,
+				326E2400278879E700A87A9D /* OpenActionsTests.xctestplan */,
+			);
+			path = TestsPlans;
+			sourceTree = "<group>";
+		};
 		3279F2702781A4CA000482B6 /* TimeIntervalSince */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +143,7 @@
 				32D5BD3E2780C95A00421102 /* Packages */,
 				32D5BCFA2780C5B200421102 /* OpenActions */,
 				32D5BD2F2780C81E00421102 /* IntentsExtension */,
+				326E23FE2788799500A87A9D /* TestsPlans */,
 				32D5BD2C2780C81E00421102 /* Frameworks */,
 				32D5BCF92780C5B200421102 /* Products */,
 			);

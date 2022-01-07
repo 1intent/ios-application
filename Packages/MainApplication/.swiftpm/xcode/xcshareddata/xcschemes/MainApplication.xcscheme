@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1310"
+   LastUpgradeVersion = "1320"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "MainApplication"
+               BuildableName = "MainApplication"
+               BlueprintName = "MainApplication"
+               ReferencedContainer = "container:">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -13,7 +29,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:TestsPlans/OpenActionsTests.xctestplan"
+            reference = "container:../../TestsPlans/MainApplication.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
@@ -22,10 +38,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "32D17B842781036B00BFB702"
-               BuildableName = "OpenActionsTests.xctest"
-               BlueprintName = "OpenActionsTests"
-               ReferencedContainer = "container:OpenActions.xcodeproj">
+               BlueprintIdentifier = "MainApplicationTests"
+               BuildableName = "MainApplicationTests"
+               BlueprintName = "MainApplicationTests"
+               ReferencedContainer = "container:">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -40,16 +56,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "32D5BCF72780C5B200421102"
-            BuildableName = "Open Actions.app"
-            BlueprintName = "OpenActions"
-            ReferencedContainer = "container:OpenActions.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -60,10 +66,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "32D5BCF72780C5B200421102"
-            BuildableName = "Open Actions.app"
-            BlueprintName = "OpenActions"
-            ReferencedContainer = "container:OpenActions.xcodeproj">
+            BlueprintIdentifier = "MainApplication"
+            BuildableName = "MainApplication"
+            BlueprintName = "MainApplication"
+            ReferencedContainer = "container:">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

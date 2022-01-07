@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "2AFB4E44-8550-4D17-9B29-89ACEBDA8498",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "MainApplicationTests",
+        "name" : "MainApplicationTests"
+      }
+    }
+  ],
+  "version" : 1
+}
