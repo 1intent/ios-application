@@ -12,7 +12,7 @@ import MainApplication
 struct OpenActionsApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            MainApplicationFactory.createHomeView()
         }
     }
 }
