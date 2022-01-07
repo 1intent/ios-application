@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "A2D8C4E6-6AD7-4145-89CE-872458A0736E",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:OpenActions.xcodeproj",
+      "identifier" : "32D5BCF72780C5B200421102",
+      "name" : "OpenActions"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:OpenActions.xcodeproj",
+        "identifier" : "32D17B842781036B00BFB702",
+        "name" : "OpenActionsTests"
+      }
+    }
+  ],
+  "version" : 1
+}

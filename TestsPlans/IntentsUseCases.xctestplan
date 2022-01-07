@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "F14769B0-BB31-4AB4-BE75-16A15995F853",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "IntentsUseCasesTests",
+        "name" : "IntentsUseCasesTests"
+      }
+    }
+  ],
+  "version" : 1
+}
