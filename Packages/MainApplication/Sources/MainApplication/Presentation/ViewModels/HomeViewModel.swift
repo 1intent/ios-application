@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-protocol HomeViewModelable{
+protocol HomeViewModelable {
     var logoImageName: String { get }
     var title: String { get }
     var contributionTitle: String { get }
