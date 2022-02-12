@@ -1,6 +1,6 @@
 //
 //  HomeView.swift
-//  OpenActions
+//  1Intent
 //
 //  Created by Pierre Abi-aad on 05/01/2022.
 //

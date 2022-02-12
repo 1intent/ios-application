@@ -1,4 +1,4 @@
-# Open Actions
+# 1Intent
 
 <img width="90" align=center src="readme_src/img/logo.png">
 

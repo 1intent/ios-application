@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "12FA1D30-A55E-42E9-B7A1-3F1465C3C766",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:1Intent.xcodeproj",
+        "identifier" : "32D17B842781036B00BFB702",
+        "name" : "1IntentTests"
+      }
+    }
+  ],
+  "version" : 1
+}
