@@ -1,6 +1,6 @@
 //
 //  HomeViewModel.swift
-//  OpenActions
+//  1Intent
 //
 //  Created by Pierre Abi-aad on 05/01/2022.
 //
@@ -20,7 +20,7 @@ final class HomeViewModel: HomeViewModelable {
     let title: String = "Open you Shortcuts app to use actions from\nOpen Actions"
     let contributionTitle: String = "Contribute on Github"
 
-    private let contributionURL: URL? = .init(string: "https://github.com/abiaad/OpenActions")
+    private let contributionURL: URL? = .init(string: "https://github.com/1intent/ios-application")
 
     @Environment(\.openURL) private var openURL
 

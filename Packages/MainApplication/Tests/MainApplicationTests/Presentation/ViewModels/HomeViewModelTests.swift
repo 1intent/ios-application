@@ -1,6 +1,6 @@
 //
 //  HomeViewModelTests.swift
-//  OpenActionsTests
+//  1IntentTests
 //
 //  Created by Pierre Abi-aad on 05/01/2022.
 //
