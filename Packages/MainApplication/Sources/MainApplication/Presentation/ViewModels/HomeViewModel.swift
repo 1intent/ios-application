@@ -17,7 +17,7 @@ protocol HomeViewModelable {
 
 final class HomeViewModel: HomeViewModelable {
     let logoImageName: String = "logo"
-    let title: String = "Open you Shortcuts app to use actions from\nOpen Actions"
+    let title: String = "Open you Shortcuts app to use actions from\n1Intent"
     let contributionTitle: String = "Contribute on Github"
 
     private let contributionURL: URL? = .init(string: "https://github.com/1intent/ios-application")
