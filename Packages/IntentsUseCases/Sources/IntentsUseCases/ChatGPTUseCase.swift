@@ -32,18 +32,26 @@ public final class ChatGPTUseCase: ChatGPTUseCaseProtocol {
     public func execute(prompt: String, configuration: ChatGPTConfiguration) async -> ChatGPTResponse? {
         
         let body: APIRequestDTO = .init(model: "text-davinci-003", prompt: prompt, temperature: 0, maxTokens: configuration.maxToken)
+        let encoder: JSONEncoder = .init()
+        encoder.keyEncodingStrategy = .convertToSnakeCase
         guard
             let url = URL(string: "https://api.openai.com/v1/completions"),
-            let data = try? JSONEncoder().encode(body)
+            let data = try? encoder.encode(body)
         else {
             return nil
         }
         var request: URLRequest = .init(url: url)
         request.setValue("Bearer \(configuration.apiKey)", forHTTPHeaderField: "Authorization")
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpMethod = "POST"
         request.httpBody = data
+
         do {
             let apiResponse = try await URLSession.shared.data(for: request)
-            let dto: APIResponseDTO = try JSONDecoder().decode(APIResponseDTO.self,
+
+            let decoder: JSONDecoder = .init()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            let dto: APIResponseDTO = try decoder.decode(APIResponseDTO.self,
                                                                from: apiResponse.0)
             guard let answer = dto.choices.first?.text
             else {
@@ -75,8 +83,7 @@ private struct APIResponseDTO: Decodable {
     struct Choice: Decodable {
         let text: String
         let index: Int
-        let logprobs: String?
-        let finishReason: String
+        let finishReason: String?
     }
 
     struct Usage: Decodable {
@@ -85,3 +92,4 @@ private struct APIResponseDTO: Decodable {
         let totalTokens: UInt
     }
 }
+
