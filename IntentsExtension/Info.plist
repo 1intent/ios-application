@@ -12,6 +12,7 @@
 			<array/>
 			<key>IntentsSupported</key>
 			<array>
+				<string>ChatGPTIntent</string>
 				<string>TimeIntervalSinceIntent</string>
 				<string>URLQueryIntent</string>
 				<string>UUIDIntent</string>
