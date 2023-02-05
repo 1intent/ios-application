@@ -584,8 +584,8 @@
 			<true/>
 			<key>INIntentDescriptionID</key>
 			<string>tm76Xq</string>
-			<key>INIntentIneligibleForSuggestions</key>
-			<true/>
+			<key>INIntentInput</key>
+			<string>prompt</string>
 			<key>INIntentLastParameterTag</key>
 			<integer>3</integer>
 			<key>INIntentManagedParameterCombinations</key>
@@ -595,7 +595,7 @@
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Ask ChatGPT : ${prompt}</string>
+					<string>Ask ChatGPT ${prompt}</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>f8YI1V</string>
 					<key>INIntentParameterCombinationUpdatesLinked</key>
@@ -604,6 +604,20 @@
 			</dict>
 			<key>INIntentName</key>
 			<string>ChatGPT</string>
+			<key>INIntentParameterCombinations</key>
+			<dict>
+				<key>prompt,apiKey,maxTokens</key>
+				<dict>
+					<key>INIntentParameterCombinationIsLinked</key>
+					<true/>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>Ask ChatGPT ${prompt}</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>8yn585</string>
+				</dict>
+			</dict>
 			<key>INIntentParameters</key>
 			<array>
 				<dict>
@@ -618,9 +632,15 @@
 					<key>INIntentParameterMetadata</key>
 					<dict>
 						<key>INIntentParameterMetadataCapitalization</key>
-						<string>Sentences</string>
+						<string>None</string>
 						<key>INIntentParameterMetadataDefaultValueID</key>
 						<string>3VY1FH</string>
+						<key>INIntentParameterMetadataDisableAutocorrect</key>
+						<true/>
+						<key>INIntentParameterMetadataDisableSmartDashes</key>
+						<true/>
+						<key>INIntentParameterMetadataDisableSmartQuotes</key>
+						<true/>
 					</dict>
 					<key>INIntentParameterName</key>
 					<string>prompt</string>
