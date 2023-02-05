@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		065E422229902FD8008AEB2A /* ChatGPTIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065E422129902FD8008AEB2A /* ChatGPTIntentHandler.swift */; };
 		3279F26F27810C57000482B6 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D5BD2D2780C81E00421102 /* Intents.framework */; };
 		3279F27227820D24000482B6 /* TimeIntervalSinceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3279F27127820D24000482B6 /* TimeIntervalSinceHandler.swift */; };
 		3279F275278215C5000482B6 /* URLQueryIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3279F274278215C5000482B6 /* URLQueryIntentHandler.swift */; };
@@ -58,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		06290EFA27B82424000ADBBF /* 1IntentTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = 1IntentTests.xctestplan; sourceTree = "<group>"; };
+		065E422129902FD8008AEB2A /* ChatGPTIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTIntentHandler.swift; sourceTree = "<group>"; };
 		326E23FD2788798900A87A9D /* MainApplication.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = MainApplication.xctestplan; sourceTree = "<group>"; };
 		326E23FF278879D400A87A9D /* IntentsUseCases.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = IntentsUseCases.xctestplan; sourceTree = "<group>"; };
 		3279F27127820D24000482B6 /* TimeIntervalSinceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalSinceHandler.swift; sourceTree = "<group>"; };
@@ -111,6 +113,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		065E422029902FBA008AEB2A /* ChatGPT */ = {
+			isa = PBXGroup;
+			children = (
+				065E422129902FD8008AEB2A /* ChatGPTIntentHandler.swift */,
+			);
+			path = ChatGPT;
+			sourceTree = "<group>";
+		};
 		326E23FE2788799500A87A9D /* TestsPlans */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +221,7 @@
 		32D5BD442780CA9800421102 /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
+				065E422029902FBA008AEB2A /* ChatGPT */,
 				3279F2702781A4CA000482B6 /* TimeIntervalSince */,
 				3279F273278215A8000482B6 /* URLQuery */,
 				32D5BD452780CAA000421102 /* UUID */,
@@ -385,6 +396,7 @@
 			files = (
 				3279F275278215C5000482B6 /* URLQueryIntentHandler.swift in Sources */,
 				32D5BD312780C81E00421102 /* IntentHandler.swift in Sources */,
+				065E422229902FD8008AEB2A /* ChatGPTIntentHandler.swift in Sources */,
 				3279F27227820D24000482B6 /* TimeIntervalSinceHandler.swift in Sources */,
 				32D5BD492780CAB900421102 /* UUIDIntentHandler.swift in Sources */,
 				32D5BD3D2780C8AB00421102 /* IntentsDefinition.intentdefinition in Sources */,
