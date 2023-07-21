@@ -16,6 +16,8 @@ final class IntentHandler: INExtension {
             return ChatGPTIntentHandler()
         case is TimeIntervalSinceIntent:
             return TimeIntervalSinceIntentHandler()
+        case is URIEncodeIntent:
+            return URIEncodeIntentHandler()
         case is URLQueryIntent:
             return URLQueryIntentHandler()
         case is UUIDIntent:
