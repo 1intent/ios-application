@@ -6,6 +6,7 @@
 	<false/>
 	<key>NSUserActivityTypes</key>
 	<array>
+		<string>CURLIntent</string>
 		<string>ChatGPTIntent</string>
 		<string>TimeIntervalSinceIntent</string>
 		<string>URIEncodeIntent</string>

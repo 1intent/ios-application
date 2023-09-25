@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		065E422229902FD8008AEB2A /* ChatGPTIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065E422129902FD8008AEB2A /* ChatGPTIntentHandler.swift */; };
+		321F488E2AC16CBF008D174D /* CURLIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321F488D2AC16CBF008D174D /* CURLIntentHandler.swift */; };
 		3279F26F27810C57000482B6 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D5BD2D2780C81E00421102 /* Intents.framework */; };
 		3279F27227820D24000482B6 /* TimeIntervalSinceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3279F27127820D24000482B6 /* TimeIntervalSinceHandler.swift */; };
 		3279F275278215C5000482B6 /* URLQueryIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3279F274278215C5000482B6 /* URLQueryIntentHandler.swift */; };
@@ -61,6 +62,7 @@
 /* Begin PBXFileReference section */
 		06290EFA27B82424000ADBBF /* 1IntentTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = 1IntentTests.xctestplan; sourceTree = "<group>"; };
 		065E422129902FD8008AEB2A /* ChatGPTIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTIntentHandler.swift; sourceTree = "<group>"; };
+		321F488D2AC16CBF008D174D /* CURLIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CURLIntentHandler.swift; sourceTree = "<group>"; };
 		326E23FD2788798900A87A9D /* MainApplication.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = MainApplication.xctestplan; sourceTree = "<group>"; };
 		326E23FF278879D400A87A9D /* IntentsUseCases.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = IntentsUseCases.xctestplan; sourceTree = "<group>"; };
 		3279F27127820D24000482B6 /* TimeIntervalSinceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalSinceHandler.swift; sourceTree = "<group>"; };
@@ -121,6 +123,14 @@
 				065E422129902FD8008AEB2A /* ChatGPTIntentHandler.swift */,
 			);
 			path = ChatGPT;
+			sourceTree = "<group>";
+		};
+		321F488C2AC16CAF008D174D /* CURL */ = {
+			isa = PBXGroup;
+			children = (
+				321F488D2AC16CBF008D174D /* CURLIntentHandler.swift */,
+			);
+			path = CURL;
 			sourceTree = "<group>";
 		};
 		326E23FE2788799500A87A9D /* TestsPlans */ = {
@@ -231,6 +241,7 @@
 		32D5BD442780CA9800421102 /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
+				321F488C2AC16CAF008D174D /* CURL */,
 				32A3C6F32A6AB7B700A561B0 /* URIEncode */,
 				065E422029902FBA008AEB2A /* ChatGPT */,
 				3279F2702781A4CA000482B6 /* TimeIntervalSince */,
@@ -405,6 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				321F488E2AC16CBF008D174D /* CURLIntentHandler.swift in Sources */,
 				3279F275278215C5000482B6 /* URLQueryIntentHandler.swift in Sources */,
 				32D5BD312780C81E00421102 /* IntentHandler.swift in Sources */,
 				065E422229902FD8008AEB2A /* ChatGPTIntentHandler.swift in Sources */,

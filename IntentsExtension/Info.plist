@@ -12,6 +12,7 @@
 			<array/>
 			<key>IntentsSupported</key>
 			<array>
+				<string>CURLIntent</string>
 				<string>ChatGPTIntent</string>
 				<string>TimeIntervalSinceIntent</string>
 				<string>URIEncodeIntent</string>
