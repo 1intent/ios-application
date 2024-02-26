@@ -5,4 +5,4 @@
 set -e
 
 TECH_VERSION=`/bin/date "+%y%j%H%M"`
-(cd $CI_WORKSPACE_PATH && agvtool new-version -all $TECH_VERSION) 
+(cd $CI_PRIMARY_REPOSITORY_PATH && agvtool new-version -all $TECH_VERSION) 
