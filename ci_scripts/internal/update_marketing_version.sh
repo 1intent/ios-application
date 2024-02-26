@@ -4,4 +4,4 @@
 # a nonzero exit code.
 set -e
 
-(cd $CI_WORKSPACE_PATH && agvtool new-marketing-version "$CI_TAG") 
+(cd $CI_PRIMARY_REPOSITORY_PATH && agvtool new-marketing-version "$CI_TAG") 
