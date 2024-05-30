@@ -136,88 +136,13 @@
 	<key>INIntentDefinitionNamespace</key>
 	<string>AfBqvF</string>
 	<key>INIntentDefinitionSystemVersion</key>
-	<string>22G90</string>
+	<string>23E224</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
-	<string>15A240d</string>
+	<string>15F31d</string>
 	<key>INIntentDefinitionToolsVersion</key>
-	<string>15.0</string>
+	<string>15.4</string>
 	<key>INIntents</key>
 	<array>
-		<dict>
-			<key>INIntentCategory</key>
-			<string>create</string>
-			<key>INIntentClassName</key>
-			<string>UUIDIntent</string>
-			<key>INIntentConfigurable</key>
-			<true/>
-			<key>INIntentDescription</key>
-			<string>Generate an UUID (universally unique identifier)</string>
-			<key>INIntentDescriptionID</key>
-			<string>CZicjn</string>
-			<key>INIntentIneligibleForSuggestions</key>
-			<true/>
-			<key>INIntentManagedParameterCombinations</key>
-			<dict>
-				<key></key>
-				<dict>
-					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
-					<true/>
-					<key>INIntentParameterCombinationTitle</key>
-					<string>Generate UUID</string>
-					<key>INIntentParameterCombinationTitleID</key>
-					<string>hOF4MX</string>
-					<key>INIntentParameterCombinationUpdatesLinked</key>
-					<true/>
-				</dict>
-			</dict>
-			<key>INIntentName</key>
-			<string>UUID</string>
-			<key>INIntentResponse</key>
-			<dict>
-				<key>INIntentResponseCodes</key>
-				<array>
-					<dict>
-						<key>INIntentResponseCodeName</key>
-						<string>success</string>
-						<key>INIntentResponseCodeSuccess</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>INIntentResponseCodeName</key>
-						<string>failure</string>
-					</dict>
-				</array>
-				<key>INIntentResponseLastParameterTag</key>
-				<integer>1</integer>
-				<key>INIntentResponseOutput</key>
-				<string>uuidString</string>
-				<key>INIntentResponseParameters</key>
-				<array>
-					<dict>
-						<key>INIntentResponseParameterDisplayName</key>
-						<string>UUID</string>
-						<key>INIntentResponseParameterDisplayNameID</key>
-						<string>txTe7E</string>
-						<key>INIntentResponseParameterDisplayPriority</key>
-						<integer>1</integer>
-						<key>INIntentResponseParameterName</key>
-						<string>uuidString</string>
-						<key>INIntentResponseParameterTag</key>
-						<integer>1</integer>
-						<key>INIntentResponseParameterType</key>
-						<string>String</string>
-					</dict>
-				</array>
-			</dict>
-			<key>INIntentTitle</key>
-			<string>Generate UUID</string>
-			<key>INIntentTitleID</key>
-			<string>W4PDNn</string>
-			<key>INIntentType</key>
-			<string>Custom</string>
-			<key>INIntentVerb</key>
-			<string>Create</string>
-		</dict>
 		<dict>
 			<key>INIntentCategory</key>
 			<string>generic</string>
@@ -1239,6 +1164,81 @@
 			<string>Custom</string>
 			<key>INIntentVerb</key>
 			<string>Run</string>
+		</dict>
+		<dict>
+			<key>INIntentCategory</key>
+			<string>generic</string>
+			<key>INIntentConfigurable</key>
+			<true/>
+			<key>INIntentDescriptionID</key>
+			<string>cYWCqC</string>
+			<key>INIntentManagedParameterCombinations</key>
+			<dict>
+				<key></key>
+				<dict>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+					<key>INIntentParameterCombinationUpdatesLinked</key>
+					<true/>
+				</dict>
+			</dict>
+			<key>INIntentName</key>
+			<string>UUID</string>
+			<key>INIntentParameterCombinations</key>
+			<dict>
+				<key></key>
+				<dict>
+					<key>INIntentParameterCombinationIsPrimary</key>
+					<true/>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+				</dict>
+			</dict>
+			<key>INIntentResponse</key>
+			<dict>
+				<key>INIntentResponseCodes</key>
+				<array>
+					<dict>
+						<key>INIntentResponseCodeName</key>
+						<string>success</string>
+						<key>INIntentResponseCodeSuccess</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>INIntentResponseCodeName</key>
+						<string>failure</string>
+					</dict>
+				</array>
+				<key>INIntentResponseLastParameterTag</key>
+				<integer>1</integer>
+				<key>INIntentResponseOutput</key>
+				<string>uuid</string>
+				<key>INIntentResponseParameters</key>
+				<array>
+					<dict>
+						<key>INIntentResponseParameterDisplayName</key>
+						<string>UUID</string>
+						<key>INIntentResponseParameterDisplayNameID</key>
+						<string>Uy7VhM</string>
+						<key>INIntentResponseParameterDisplayPriority</key>
+						<integer>1</integer>
+						<key>INIntentResponseParameterName</key>
+						<string>uuid</string>
+						<key>INIntentResponseParameterTag</key>
+						<integer>1</integer>
+						<key>INIntentResponseParameterType</key>
+						<string>String</string>
+					</dict>
+				</array>
+			</dict>
+			<key>INIntentTitle</key>
+			<string>UUID</string>
+			<key>INIntentTitleID</key>
+			<string>3srWDI</string>
+			<key>INIntentType</key>
+			<string>Custom</string>
+			<key>INIntentVerb</key>
+			<string>Do</string>
 		</dict>
 	</array>
 	<key>INTypes</key>
