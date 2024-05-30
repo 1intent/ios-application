@@ -16,6 +16,8 @@ final class IntentHandler: INExtension {
             return CURLIntentHandler()
         case is ChatGPTIntent:
             return ChatGPTIntentHandler()
+        case is DayBeforeTimestampIntent:
+            return DayBeforeTimestampHandler()
         case is TimeIntervalSinceIntent:
             return TimeIntervalSinceIntentHandler()
         case is URIEncodeIntent:

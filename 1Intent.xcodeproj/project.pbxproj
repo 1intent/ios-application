@@ -13,6 +13,7 @@
 		3279F27227820D24000482B6 /* TimeIntervalSinceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3279F27127820D24000482B6 /* TimeIntervalSinceHandler.swift */; };
 		3279F275278215C5000482B6 /* URLQueryIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3279F274278215C5000482B6 /* URLQueryIntentHandler.swift */; };
 		327EBC652AEEFA1A00B20B93 /* UUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327EBC632AEEF87600B20B93 /* UUID.swift */; };
+		3280EABF2C08870700C40D3A /* DayBeforeTimestampHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3280EABE2C08870700C40D3A /* DayBeforeTimestampHandler.swift */; };
 		3284B996278792BB00D79EB8 /* MainApplication in Frameworks */ = {isa = PBXBuildFile; productRef = 3284B995278792BB00D79EB8 /* MainApplication */; };
 		32A3C6F52A6AB7D200A561B0 /* URIEncodeIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A3C6F42A6AB7D200A561B0 /* URIEncodeIntentHandler.swift */; };
 		32D17B782780CDB100BFB702 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D5BD2D2780C81E00421102 /* Intents.framework */; };
@@ -67,6 +68,7 @@
 		3279F27127820D24000482B6 /* TimeIntervalSinceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalSinceHandler.swift; sourceTree = "<group>"; };
 		3279F274278215C5000482B6 /* URLQueryIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryIntentHandler.swift; sourceTree = "<group>"; };
 		327EBC632AEEF87600B20B93 /* UUID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUID.swift; sourceTree = "<group>"; };
+		3280EABE2C08870700C40D3A /* DayBeforeTimestampHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayBeforeTimestampHandler.swift; sourceTree = "<group>"; };
 		3284B994278786E500D79EB8 /* MainApplication */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MainApplication; sourceTree = "<group>"; };
 		32A3C6F42A6AB7D200A561B0 /* URIEncodeIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URIEncodeIntentHandler.swift; sourceTree = "<group>"; };
 		32D17B792780F19C00BFB702 /* IntentsExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = IntentsExtension.entitlements; sourceTree = "<group>"; };
@@ -157,6 +159,14 @@
 			path = URLQuery;
 			sourceTree = "<group>";
 		};
+		3280EABD2C08750E00C40D3A /* DayBeforeTimestamp */ = {
+			isa = PBXGroup;
+			children = (
+				3280EABE2C08870700C40D3A /* DayBeforeTimestampHandler.swift */,
+			);
+			path = DayBeforeTimestamp;
+			sourceTree = "<group>";
+		};
 		32A3C6F32A6AB7B700A561B0 /* URIEncode */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +249,7 @@
 		32D5BD442780CA9800421102 /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
+				3280EABD2C08750E00C40D3A /* DayBeforeTimestamp */,
 				321F488C2AC16CAF008D174D /* CURL */,
 				32A3C6F32A6AB7B700A561B0 /* URIEncode */,
 				065E422029902FBA008AEB2A /* ChatGPT */,
@@ -414,6 +425,7 @@
 			files = (
 				321F488E2AC16CBF008D174D /* CURLIntentHandler.swift in Sources */,
 				3279F275278215C5000482B6 /* URLQueryIntentHandler.swift in Sources */,
+				3280EABF2C08870700C40D3A /* DayBeforeTimestampHandler.swift in Sources */,
 				32D5BD312780C81E00421102 /* IntentHandler.swift in Sources */,
 				065E422229902FD8008AEB2A /* ChatGPTIntentHandler.swift in Sources */,
 				327EBC652AEEFA1A00B20B93 /* UUID.swift in Sources */,
