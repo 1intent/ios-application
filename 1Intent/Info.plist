@@ -8,6 +8,7 @@
 	<array>
 		<string>CURLIntent</string>
 		<string>ChatGPTIntent</string>
+		<string>DayBeforeTimestampIntent</string>
 		<string>TimeIntervalSinceIntent</string>
 		<string>URIEncodeIntent</string>
 		<string>URLQueryIntent</string>

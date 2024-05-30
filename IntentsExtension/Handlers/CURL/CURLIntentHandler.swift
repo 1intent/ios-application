@@ -35,7 +35,7 @@ final class CURLIntentHandler: NSObject, CURLIntentHandling {
             dictionary[key] = value
         }
 
-        guard let result = await self.useCase.execute(with: url, verb: .delete, headers: dictionary, body: intent.body)
+        guard let result = await self.useCase.execute(with: url, verb: verb, headers: dictionary, body: intent.body)
         else {
             return .init(code: .failure, userActivity: nil)
         }
