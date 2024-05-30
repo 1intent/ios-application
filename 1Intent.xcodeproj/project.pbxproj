@@ -12,10 +12,10 @@
 		3279F26F27810C57000482B6 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D5BD2D2780C81E00421102 /* Intents.framework */; };
 		3279F27227820D24000482B6 /* TimeIntervalSinceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3279F27127820D24000482B6 /* TimeIntervalSinceHandler.swift */; };
 		3279F275278215C5000482B6 /* URLQueryIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3279F274278215C5000482B6 /* URLQueryIntentHandler.swift */; };
+		327EBC652AEEFA1A00B20B93 /* UUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327EBC632AEEF87600B20B93 /* UUID.swift */; };
 		3284B996278792BB00D79EB8 /* MainApplication in Frameworks */ = {isa = PBXBuildFile; productRef = 3284B995278792BB00D79EB8 /* MainApplication */; };
 		32A3C6F52A6AB7D200A561B0 /* URIEncodeIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A3C6F42A6AB7D200A561B0 /* URIEncodeIntentHandler.swift */; };
 		32D17B782780CDB100BFB702 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D5BD2D2780C81E00421102 /* Intents.framework */; };
-		32D17B8E2781038600BFB702 /* UUIDIntentHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D5BD462780CAB900421102 /* UUIDIntentHandlerTests.swift */; };
 		32D17B902781044500BFB702 /* IntentsUseCases in Frameworks */ = {isa = PBXBuildFile; productRef = 32D17B8F2781044500BFB702 /* IntentsUseCases */; };
 		32D17B922781059000BFB702 /* IntentsUseCases in Frameworks */ = {isa = PBXBuildFile; productRef = 32D17B912781059000BFB702 /* IntentsUseCases */; };
 		32D17B962781077100BFB702 /* IntentsDefinition.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 32D5BD3C2780C8AB00421102 /* IntentsDefinition.intentdefinition */; };
@@ -25,7 +25,6 @@
 		32D5BD312780C81E00421102 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D5BD302780C81E00421102 /* IntentHandler.swift */; };
 		32D5BD352780C81E00421102 /* IntentsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 32D5BD2B2780C81E00421102 /* IntentsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		32D5BD3D2780C8AB00421102 /* IntentsDefinition.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 32D5BD3C2780C8AB00421102 /* IntentsDefinition.intentdefinition */; };
-		32D5BD492780CAB900421102 /* UUIDIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D5BD472780CAB900421102 /* UUIDIntentHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +66,7 @@
 		326E23FF278879D400A87A9D /* IntentsUseCases.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = IntentsUseCases.xctestplan; sourceTree = "<group>"; };
 		3279F27127820D24000482B6 /* TimeIntervalSinceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalSinceHandler.swift; sourceTree = "<group>"; };
 		3279F274278215C5000482B6 /* URLQueryIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryIntentHandler.swift; sourceTree = "<group>"; };
+		327EBC632AEEF87600B20B93 /* UUID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUID.swift; sourceTree = "<group>"; };
 		3284B994278786E500D79EB8 /* MainApplication */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MainApplication; sourceTree = "<group>"; };
 		32A3C6F42A6AB7D200A561B0 /* URIEncodeIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URIEncodeIntentHandler.swift; sourceTree = "<group>"; };
 		32D17B792780F19C00BFB702 /* IntentsExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = IntentsExtension.entitlements; sourceTree = "<group>"; };
@@ -83,8 +83,6 @@
 		32D5BD322780C81E00421102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32D5BD3C2780C8AB00421102 /* IntentsDefinition.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = IntentsDefinition.intentdefinition; sourceTree = "<group>"; };
 		32D5BD3F2780C98400421102 /* IntentsUseCases */ = {isa = PBXFileReference; lastKnownFileType = folder; path = IntentsUseCases; sourceTree = "<group>"; };
-		32D5BD462780CAB900421102 /* UUIDIntentHandlerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UUIDIntentHandlerTests.swift; sourceTree = "<group>"; };
-		32D5BD472780CAB900421102 /* UUIDIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UUIDIntentHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,8 +252,7 @@
 		32D5BD452780CAA000421102 /* UUID */ = {
 			isa = PBXGroup;
 			children = (
-				32D5BD472780CAB900421102 /* UUIDIntentHandler.swift */,
-				32D5BD462780CAB900421102 /* UUIDIntentHandlerTests.swift */,
+				327EBC632AEEF87600B20B93 /* UUID.swift */,
 			);
 			path = UUID;
 			sourceTree = "<group>";
@@ -399,7 +396,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32D17B8E2781038600BFB702 /* UUIDIntentHandlerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,8 +416,8 @@
 				3279F275278215C5000482B6 /* URLQueryIntentHandler.swift in Sources */,
 				32D5BD312780C81E00421102 /* IntentHandler.swift in Sources */,
 				065E422229902FD8008AEB2A /* ChatGPTIntentHandler.swift in Sources */,
+				327EBC652AEEFA1A00B20B93 /* UUID.swift in Sources */,
 				3279F27227820D24000482B6 /* TimeIntervalSinceHandler.swift in Sources */,
-				32D5BD492780CAB900421102 /* UUIDIntentHandler.swift in Sources */,
 				32D5BD3D2780C8AB00421102 /* IntentsDefinition.intentdefinition in Sources */,
 				32A3C6F52A6AB7D200A561B0 /* URIEncodeIntentHandler.swift in Sources */,
 			);
@@ -540,7 +536,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -595,7 +591,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
