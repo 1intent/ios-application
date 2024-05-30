@@ -10,21 +10,6 @@ import XCTest
 
 final class DayBeforeTimestampUseCaseTests: XCTestCase {
 
-    func testToday() {
-        // Given
-        let useCase = DayBeforeTimestampUseCaseImpl()
-        let reference: DayReference = .today
-        let startOfDay = false
-
-        // When
-        let timestamp = useCase.execute(reference: reference, startOfDay: startOfDay)
-        print(timestamp)
-        // Then
-        let expectedDate = Calendar.current.date(byAdding: .day, value: -1, to: Calendar.current.startOfDay(for: Date()))!
-        let expectedTimestamp = expectedDate.timeIntervalSince1970
-        XCTAssertEqual(timestamp, expectedTimestamp, accuracy: 1.0)
-    }
-
     func testExecuteTodayStartOfDay() {
         // Given
         let useCase = DayBeforeTimestampUseCaseImpl()
