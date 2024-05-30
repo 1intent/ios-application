@@ -24,7 +24,7 @@
 		32D5BD002780C5B300421102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D5BCFF2780C5B300421102 /* Assets.xcassets */; };
 		32D5BD032780C5B300421102 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D5BD022780C5B300421102 /* Preview Assets.xcassets */; };
 		32D5BD312780C81E00421102 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D5BD302780C81E00421102 /* IntentHandler.swift */; };
-		32D5BD352780C81E00421102 /* IntentsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 32D5BD2B2780C81E00421102 /* IntentsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		32D5BD352780C81E00421102 /* IntentsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 32D5BD2B2780C81E00421102 /* IntentsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		32D5BD3D2780C8AB00421102 /* IntentsDefinition.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 32D5BD3C2780C8AB00421102 /* IntentsDefinition.intentdefinition */; };
 /* End PBXBuildFile section */
 
@@ -46,15 +46,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		32D5BD392780C81E00421102 /* Embed App Extensions */ = {
+		32D5BD392780C81E00421102 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				32D5BD352780C81E00421102 /* IntentsExtension.appex in Embed App Extensions */,
+				32D5BD352780C81E00421102 /* IntentsExtension.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -299,7 +299,7 @@
 				32D5BCF42780C5B200421102 /* Sources */,
 				32D5BCF52780C5B200421102 /* Frameworks */,
 				32D5BCF62780C5B200421102 /* Resources */,
-				32D5BD392780C81E00421102 /* Embed App Extensions */,
+				32D5BD392780C81E00421102 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -342,7 +342,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
-				LastUpgradeCheck = 1310;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					32D17B842781036B00BFB702 = {
 						CreatedOnToolsVersion = 13.1;
@@ -534,6 +534,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -595,6 +596,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
