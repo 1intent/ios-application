@@ -1562,6 +1562,8 @@
 				</array>
 				<key>INIntentResponseLastParameterTag</key>
 				<integer>3</integer>
+				<key>INIntentResponseOutput</key>
+				<string>timestamp</string>
 				<key>INIntentResponseParameters</key>
 				<array>
 					<dict>
