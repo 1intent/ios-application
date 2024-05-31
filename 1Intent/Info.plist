@@ -10,7 +10,6 @@
 		<string>ChatGPTIntent</string>
 		<string>DayBeforeTimestampIntent</string>
 		<string>TimeIntervalSinceIntent</string>
-		<string>TimeIntervalToDateIntent</string>
 		<string>URIEncodeIntent</string>
 		<string>URLQueryIntent</string>
 		<string>UUIDIntent</string>
