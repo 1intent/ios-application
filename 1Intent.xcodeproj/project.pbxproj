@@ -18,6 +18,9 @@
 		3280EAC62C09B0B500C40D3A /* ConvertTimeIntervalToDateIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3280EAC52C09B0B500C40D3A /* ConvertTimeIntervalToDateIntent.swift */; };
 		3280EAC82C09B6A800C40D3A /* VariationCalculationIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3280EAC72C09B6A800C40D3A /* VariationCalculationIntent.swift */; };
 		3280EACA2C09C19600C40D3A /* NumberFormatterIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3280EAC92C09C19600C40D3A /* NumberFormatterIntent.swift */; };
+		3280EADE2C0DA04E00C40D3A /* GetDayBeforeTimeIntervalIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3280EADD2C0DA04E00C40D3A /* GetDayBeforeTimeIntervalIntent.swift */; };
+		3280EAE02C0DA13E00C40D3A /* IntentsUseCases in Frameworks */ = {isa = PBXBuildFile; productRef = 3280EADF2C0DA13E00C40D3A /* IntentsUseCases */; };
+		3280EAE22C0E263F00C40D3A /* GetDateBeforeIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3280EAE12C0E263F00C40D3A /* GetDateBeforeIntent.swift */; };
 		3284B996278792BB00D79EB8 /* MainApplication in Frameworks */ = {isa = PBXBuildFile; productRef = 3284B995278792BB00D79EB8 /* MainApplication */; };
 		32A3C6F52A6AB7D200A561B0 /* URIEncodeIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A3C6F42A6AB7D200A561B0 /* URIEncodeIntentHandler.swift */; };
 		32D17B782780CDB100BFB702 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D5BD2D2780C81E00421102 /* Intents.framework */; };
@@ -77,6 +80,8 @@
 		3280EAC52C09B0B500C40D3A /* ConvertTimeIntervalToDateIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertTimeIntervalToDateIntent.swift; sourceTree = "<group>"; };
 		3280EAC72C09B6A800C40D3A /* VariationCalculationIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariationCalculationIntent.swift; sourceTree = "<group>"; };
 		3280EAC92C09C19600C40D3A /* NumberFormatterIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatterIntent.swift; sourceTree = "<group>"; };
+		3280EADD2C0DA04E00C40D3A /* GetDayBeforeTimeIntervalIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDayBeforeTimeIntervalIntent.swift; sourceTree = "<group>"; };
+		3280EAE12C0E263F00C40D3A /* GetDateBeforeIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDateBeforeIntent.swift; sourceTree = "<group>"; };
 		3284B994278786E500D79EB8 /* MainApplication */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MainApplication; sourceTree = "<group>"; };
 		32A3C6F42A6AB7D200A561B0 /* URIEncodeIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URIEncodeIntentHandler.swift; sourceTree = "<group>"; };
 		32D17B792780F19C00BFB702 /* IntentsExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = IntentsExtension.entitlements; sourceTree = "<group>"; };
@@ -109,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3280EAE02C0DA13E00C40D3A /* IntentsUseCases in Frameworks */,
 				3284B996278792BB00D79EB8 /* MainApplication in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +228,8 @@
 				32D5BCFF2780C5B300421102 /* Assets.xcassets */,
 				32D5BD012780C5B300421102 /* Preview Content */,
 				3280EAC52C09B0B500C40D3A /* ConvertTimeIntervalToDateIntent.swift */,
+				3280EADD2C0DA04E00C40D3A /* GetDayBeforeTimeIntervalIntent.swift */,
+				3280EAE12C0E263F00C40D3A /* GetDateBeforeIntent.swift */,
 				3280EAC72C09B6A800C40D3A /* VariationCalculationIntent.swift */,
 				3280EAC92C09C19600C40D3A /* NumberFormatterIntent.swift */,
 			);
@@ -329,6 +337,7 @@
 			name = 1Intent;
 			packageProductDependencies = (
 				3284B995278792BB00D79EB8 /* MainApplication */,
+				3280EADF2C0DA13E00C40D3A /* IntentsUseCases */,
 			);
 			productName = OpenActions;
 			productReference = 32D5BCF82780C5B200421102 /* Open Actions.app */;
@@ -437,7 +446,9 @@
 				3280EACA2C09C19600C40D3A /* NumberFormatterIntent.swift in Sources */,
 				3280EAC62C09B0B500C40D3A /* ConvertTimeIntervalToDateIntent.swift in Sources */,
 				32D17B962781077100BFB702 /* IntentsDefinition.intentdefinition in Sources */,
+				3280EAE22C0E263F00C40D3A /* GetDateBeforeIntent.swift in Sources */,
 				3280EAC82C09B6A800C40D3A /* VariationCalculationIntent.swift in Sources */,
+				3280EADE2C0DA04E00C40D3A /* GetDayBeforeTimeIntervalIntent.swift in Sources */,
 				32D5BCFC2780C5B200421102 /* OneIntentApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -807,6 +818,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3280EADF2C0DA13E00C40D3A /* IntentsUseCases */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IntentsUseCases;
+		};
 		3284B995278792BB00D79EB8 /* MainApplication */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MainApplication;
