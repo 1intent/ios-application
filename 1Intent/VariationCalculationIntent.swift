@@ -8,47 +8,27 @@
 import Foundation
 import AppIntents
 
-
 struct VariationCalculationIntent: AppIntent {
     static var title: LocalizedStringResource = "Calculate Variation"
 
-    @Parameter(title: "First Number", description: "The first number for the calculation")
-    var firstNumber: Double?
+    @Parameter(title: "Old value")
+    var oldValue: Double?
 
-    @Parameter(title: "Second Number", description: "The second number for the calculation")
-    var secondNumber: Double?
+    
+    @Parameter(title: "New value")
+    var newValue: Double?
 
-    @Parameter(title: "Output Format", description: "The format for the output (default: raw number)", default: OutputFormatType.rawNumber)
-    var outputFormat: OutputFormatType
+    static var parameterSummary: some ParameterSummary {
+        Summary("Get variation between \(\.$oldValue) & \(\.$newValue)")
+    }
 
     func perform() async throws -> some ReturnsValue<Double?> {
-        guard let firstNumber = self.firstNumber,
-              let secondNumber = self.secondNumber
+        guard let oldValue = self.oldValue,
+              let newValue = self.newValue
         else {
             return .result(value: nil)
         }
-        let variation = ((secondNumber - firstNumber) / firstNumber)
-        switch self.outputFormat {
-        case .rawNumber:
-            return .result(value: variation)
-        case .rawPercent:
-            return .result(value: variation * 100)
-        }
-    }
-}
-
-enum OutputFormatType: String, AppEnum {
-    case rawNumber = "Raw Number"
-    case rawPercent = "Raw Percent"
-
-    static var typeDisplayRepresentation: TypeDisplayRepresentation {
-        "Output Format"
-    }
-
-    static var caseDisplayRepresentations: [OutputFormatType: DisplayRepresentation] {
-        [
-            .rawNumber: "Raw Number",
-            .rawPercent: "Raw Percent",
-        ]
+        let variation = ((newValue - oldValue) / oldValue)
+        return .result(value: variation)
     }
 }

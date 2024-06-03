@@ -12,7 +12,7 @@ public enum DayReference {
     case specific(Date)
 }
 
-public protocol DayBeforeTimestampUseCase {
+public protocol DayBeforeTimestampUseCase: Sendable {
     func execute(reference: DayReference, startOfDay: Bool) -> TimeInterval
 }
 
@@ -47,7 +47,7 @@ public final class DayBeforeTimestampUseCaseImpl: DayBeforeTimestampUseCase {
         }
 
         guard let modifiedDayBefore = calendar.date(from: components) else {
-            return 0
+            return -1
         }
         return modifiedDayBefore.timeIntervalSince1970
     }
