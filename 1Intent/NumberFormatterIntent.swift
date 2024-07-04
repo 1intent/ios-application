@@ -32,6 +32,12 @@ struct NumberFormatterIntent: AppIntent {
     @Parameter(title: "Rounding Mode", description: "The rounding mode (default: half even)", default: NumberFormatterRoundingModeType.halfEven)
     var roundingMode: NumberFormatterRoundingModeType
 
+    @Parameter(title: "Negative Prefix", default: "")
+    var negativePrefix: String
+
+    @Parameter(title: "Positive Prefix", default: "")
+    var positivePrefix: String
+
     func perform() async throws -> some ReturnsValue<String> {
         let formatter = NumberFormatter()
         if let locale = self.locale {
@@ -42,7 +48,9 @@ struct NumberFormatterIntent: AppIntent {
         formatter.usesGroupingSeparator = self.usesGroupingSeparator
         formatter.roundingMode = self.roundingMode.nativeValue
         formatter.numberStyle = self.style.nativeValue
-
+        formatter.negativePrefix = self.negativePrefix
+        formatter.positivePrefix = self.positivePrefix
+        
         guard let formattedNumber = formatter.string(from: NSNumber(value: number)) else {
             throw NSError(domain: "", code: 1, userInfo: [NSLocalizedDescriptionKey: "Unable to format the number"])
         }
