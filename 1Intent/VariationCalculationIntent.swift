@@ -30,7 +30,7 @@ struct VariationCalculationIntent: AppIntent {
         }
         guard oldValue != 0
         else {
-            return .result(value: 0)
+            return .result(value: nil)
         }
 
         let variation = ((newValue - oldValue) / oldValue)
